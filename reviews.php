@@ -210,3 +210,14 @@ function reviews_form() {
 
 
 add_shortcode( 'review_form', 'reviews_form' );
+
+function review_install() {
+    // Perform any installation tasks here
+}
+
+function review_uninstall() {
+    // Perform any uninstallation tasks here
+}
+register_activation_hook(__FILE__, 'review_install');
+register_deactivation_hook(__FILE__, 'review_uninstall');
+
